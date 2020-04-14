@@ -3,7 +3,15 @@ Our team project is a 3D animation telling a story of how an apple tree is forme
  
 
 # Contribution:
- 
+
+## Ziying Yu (105182320):
+- leaves: I created customized leaves shade by scaling the Grass object and applied texture mapping on leaves.
+- cloud: I created cloud shade by scaling the sphere object and achieve the movement by using transform matrix with respect to time. Designed and Impelmented the clouds that simulate the light reflection that looks like the real clouds, which different cloudhave different z buffer and different amibient to achieve the real look.
+- bird: I created a bird by combining three spheres as head, body and the eye and three triangle as the wings and mouth. Impelmented the head object as the base and then developed the other parts based on the head. I also applied matrix transformation with respect to time to achieve the movement of the bird along the change of time. Except the head, all the other component are built on the head matrix so that all the compoents can move together while flying.
+- apple fall: I calculate the initial postion of the apple falls and implement the orignal staight falls track. Implement the time within the cloud display so that it shows up after the cloud fly out.
+- sounf effect: I found sound effect sources such as spongebob, applefall, bird_fly_then_rain, woohoo.
+
+
 ## Shuhua Zhan (705190671):
 - I created an object of one bunch of grass which is formed by three pieces of grass with different parabolas curves offsetting from the same point. Then with this Bunch_Grass object, I created another object called Field with a length of 10 and width of 5, containing numbers of randomly scaled Bunch_Grass. Then I use transform matrices to apply Field all over the island with gap of 20. In order to simulate grass fluttering in the wind with time, I multiply the Field matrix with a shear matrix with respect to time.
 - Created a poop object that is formed by five scaled sphere in varied sizes stacking together with the largest-size oblates in the bottom and the smallest one on top. The poop is dropped from the position of the bird somewhere while it’s flying and falls along a parabola track, which is achieved by multiplying translation matrix with respect to time where x changes with the same speed as the bird and y axis changes with an acceleration of 0.8.
@@ -29,16 +37,6 @@ Finally I changed the practical cylinder with two faces of a cube (front and top
 
 - Raining:
   - It is also made of a practical system. For each practical, we shoot it from the cloud to ground and reset it to top when it reaches the ground. Each practical are given a random delay to time variable to make the raining more realistic. The random delay is proportional to its world space xyz position. 
- 
- 
- 
- 
-## Ziying Yu (105182320):
-- leaves:Created leaves shade by scaling the Grass object and applied texture mapping on leaves.
-- cloud: Created cloud shade by scaling the sphere object and achieve the movement by using transform matrix with respect to time. Different cloudhave different z buffer and different amibient to achieve the real look.
-- bird: Created a bird by combining three spheres as head, body and the eye and three triangle as the wings and mouth. I also applied matrix transformation with respect to time to achieve the movement of the bird along the change of time. Except the head, all the other component are built on the head matrix so that all the compoents can move together while flying.
-- apple fall: calculate the initial postion of the apple falls and implement the orignal staight falls track. Implement the time within the cloud display so that it shows up after the cloud fly out.
-- Help finding sound effect sources such as spongebob, applefall, bird_fly_then_rain, woohoo. 
 
  
 ## Junting Luo (605182515):
